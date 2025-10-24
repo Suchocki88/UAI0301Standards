@@ -187,13 +187,34 @@
             <h1>State Standards Alignment</h1>
             <div class="subtitle">Understanding AI: A Conceptual Approach</div>
             <div class="lesson-info">Chapter 3, Lesson 3.1: The New Communication Landscape</div>
-        </div>
+        </div><!-- End content -->
+    </div><!-- End container -->
+    
+    <script>
+        function showStandards(value) {
+            // Hide all standards content
+            const allContent = document.querySelectorAll('.standards-content');
+            allContent.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected standards
+            if (value) {
+                const selectedContent = document.getElementById(value);
+                if (selectedContent) {
+                    selectedContent.classList.add('active');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
         
-        <button class="print-button" onclick="window.print()">🖨️ Print Standards</button>
+        <button class="print-button" onclick="window.print()">??? Print Standards</button>
         
         <div class="content">
             <div class="intro">
-                <p><strong>Lesson 3.1</strong> is a Lesson Day that introduces students to prompt engineering through the professional model of developmental editor and ghost writer. Students learn that effective AI communication is a learnable skill involving iteration, editorial judgment, and clear direction. This lesson aligns with multiple state and national standards frameworks through communication practices, professional skill development, and technology literacy.</p>
+                <p><strong>Lesson 3.1</strong> introduces students to prompt engineering through the professional model of developmental editor and ghost writer. Students learn that effective AI communication is a learnable skill involving iteration, editorial judgment, and clear direction. This lesson aligns with multiple state and national standards frameworks through communication practices, professional skill development, and technology literacy.</p>
             </div>
             
             <div class="standards-selector">
@@ -220,6 +241,572 @@
                 </select>
             </div>
 
+            <!-- Texas TEKS -->
+            <div id="texas" class="standards-content">
+                <div class="standard-section">
+                    <h2>Texas Essential Knowledge and Skills (TEKS)</h2>
+                    
+                    <div class="alignment-note">
+                        Lesson 3.1 addresses English Language Arts and Career & Technical Education standards through communication development and professional skill building.
+                    </div>
+                    
+                    <h3>English Language Arts - Grade 11-12</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">ELA.110.36.b.12</div>
+                        <div class="standard-description">Compose informational texts such as explanatory essays, reports, and personal essays using genre characteristics and craft.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students compose prompts as a form of informational text, learning to craft clear explanations and directions that communicate their vision effectively to AI.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">ELA.110.36.b.13</div>
+                        <div class="standard-description">Develop an effective thesis; organize and support ideas with relevant facts, definitions, concrete details, quotations, examples, statistics, and other information.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop organizational strategies for prompts, learning to structure information appropriately for their purpose (directing AI) and support their directions with relevant details.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">ELA.110.36.b.5.C</div>
+                        <div class="standard-description">Use text structure to locate and interpret information.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn to structure their prompts effectively, understanding how organization and clarity affect AI interpretation and output quality.</div>
+                    </div>
+                    
+                    <h3>Technology Applications</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">TA.126.33.c.1</div>
+                        <div class="standard-description">Demonstrate professional written, verbal, and electronic communication skills.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop professional communication skills through learning appropriate terminology (prompt engineering, developmental editor) and effective electronic communication with AI systems.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">TA.126.33.c.6</div>
+                        <div class="standard-description">Use appropriate technology applications to facilitate the effective management of information.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn to use AI as a tool for managing creative content, understanding when and how to direct AI effectively for different purposes.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- California Standards -->
+            <div id="california" class="standards-content">
+                <div class="standard-section">
+                    <h2>California Common Core State Standards</h2>
+                    
+                    <div class="alignment-note">
+                        Lesson 3.1 addresses writing, speaking/listening, and language standards through communication skill development.
+                    </div>
+                    
+                    <h3>Writing Standards - Grades 9-10</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CCSS.ELA-LITERACY.W.9-10.4</div>
+                        <div class="standard-description">Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn to produce clear prompts appropriate to their purpose (directing AI) and audience (AI system), developing organizational strategies for effective communication.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CCSS.ELA-LITERACY.W.9-10.5</div>
+                        <div class="standard-description">Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle teaches systematic revision and refinement, demonstrating that initial attempts are starting points for progressive improvement through multiple iterations.</div>
+                    </div>
+                    
+                    <h3>Speaking and Listening Standards</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CCSS.ELA-LITERACY.SL.9-10.1</div>
+                        <div class="standard-description">Initiate and participate effectively in collaborative discussions, building on others' ideas and expressing their own clearly.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students engage in pair-shares and whole-class discussions about directing experiences, building on peer insights and articulating their own communication strategies.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CCSS.ELA-LITERACY.SL.9-10.4</div>
+                        <div class="standard-description">Present information clearly and logically such that listeners can follow the line of reasoning.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop the ability to present their directing strategies and reasoning clearly, both to AI and to their peers in discussions.</div>
+                    </div>
+                    
+                    <h3>Career Technical Education Standards</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CTE.IT.1.2</div>
+                        <div class="standard-description">Demonstrate effective communication with colleagues, clients, and customers.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn professional communication frameworks through the editor/ghost writer model, developing skills in clear direction, evaluation, and feedback.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CTE.IT.5.1</div>
+                        <div class="standard-description">Understand and adapt to evolving technologies.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop foundational skills for working with AI technology, understanding its applications and learning to adapt their communication strategies for effective collaboration.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Florida Standards -->
+            <div id="florida" class="standards-content">
+                <div class="standard-section">
+                    <h2>Florida Standards</h2>
+                    
+                    <div class="alignment-note">
+                        Lesson 3.1 addresses Language Arts and Digital Literacy standards through communication development and technology skill building.
+                    </div>
+                    
+                    <h3>English Language Arts - Grades 9-10</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">LAFS.910.W.1.4</div>
+                        <div class="standard-description">Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop clear, coherent prompts appropriate to their purpose and audience, learning to adapt their communication style for effective AI collaboration.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">LAFS.910.W.1.5</div>
+                        <div class="standard-description">Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle demonstrates the value of revision and refinement, teaching students to view initial attempts as starting points rather than failures.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">LAFS.910.SL.1.1</div>
+                        <div class="standard-description">Initiate and participate effectively in collaborative discussions, building on others' ideas and expressing their own clearly and persuasively.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Through pair-shares and class discussions, students share directing experiences, build on peer observations, and articulate their own strategies clearly.</div>
+                    </div>
+                    
+                    <h3>Digital Literacy Standards</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">SS.912.C.2.14</div>
+                        <div class="standard-description">Analyze processes for civic engagement and explain how to participate in all forms of democratic discourse.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop communication and collaboration skills essential for civic participation, learning to express ideas clearly and engage productively in shared work.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">HE.912.B.4.4</div>
+                        <div class="standard-description">Use effective communication skills in various contexts.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students practice effective communication across contexts: directing AI, discussing with peers, and articulating their editorial judgment.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New York Standards -->
+            <div id="newyork" class="standards-content">
+                <div class="standard-section">
+                    <h2>New York State Next Generation Learning Standards</h2>
+                    
+                    <div class="alignment-note">
+                        Lesson 3.1 addresses ELA and Computer Science & Digital Fluency standards through communication skill development and technology literacy.
+                    </div>
+                    
+                    <h3>English Language Arts - Writing</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">W11-12.4</div>
+                        <div class="standard-description">Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop prompts with appropriate organization and style for their purpose (directing AI), learning to adapt their communication based on desired outcomes.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">W11-12.5</div>
+                        <div class="standard-description">Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach, focusing on what is most significant.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle (evaluate ? refine ? repeat) directly teaches the revision process, emphasizing that refinement is essential to effective communication.</div>
+                    </div>
+                    
+                    <h3>Speaking and Listening</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">SL11-12.1</div>
+                        <div class="standard-description">Initiate and participate effectively in a range of collaborative discussions with diverse partners.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students engage in collaborative discussions about directing experiences, sharing strategies and building on peer insights.</div>
+                    </div>
+                    
+                    <h3>Computer Science & Digital Fluency</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">9-12.IC.1</div>
+                        <div class="standard-description">Evaluate the impact of computing technologies on equity, access, and influence in a global society.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students explore how AI technology changes access to content creation and the professional landscape, considering both opportunities and implications.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">9-12.IC.5</div>
+                        <div class="standard-description">Describe ways that complex computer systems can be designed for inclusivity and to mitigate unintended consequences.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Through learning effective prompting, students understand how human direction shapes AI output and the importance of clear communication in achieving desired results.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pennsylvania Standards -->
+            <div id="pennsylvania" class="standards-content">
+                <div class="standard-section">
+                    <h2>Pennsylvania Core Standards</h2>
+                    
+                    <div class="alignment-note">
+                        Lesson 3.1 addresses English Language Arts and Career Education standards through communication development and professional skill building.
+                    </div>
+                    
+                    <h3>English Language Arts - Writing</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CC.1.4.11-12.S</div>
+                        <div class="standard-description">Draw evidence from literary or informational texts to support analysis, reflection, and research.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students reflect on their directing experiences and analyze what makes communication effective, using evidence from their practice to support their conclusions.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CC.1.4.11-12.T</div>
+                        <div class="standard-description">Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle teaches systematic revision and the value of multiple attempts, demonstrating that refinement is the path to effectiveness.</div>
+                    </div>
+                    
+                    <h3>Speaking and Listening</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CC.1.5.11-12.A</div>
+                        <div class="standard-description">Initiate and participate effectively in a range of collaborative discussions on grade-level topics, texts, and issues.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students participate in discussions about directing strategies, sharing experiences and building collaborative understanding of effective communication.</div>
+                    </div>
+                    
+                    <h3>Career Education and Work Standards</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">13.1.11.C</div>
+                        <div class="standard-description">Analyze career options based on personal interests, abilities, and aptitudes.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students explore professional roles (editor, manager, director) that rely on communication and judgment rather than direct production, expanding their career awareness.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">13.3.11.B</div>
+                        <div class="standard-description">Evaluate the application of technology to solve problems.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn to apply AI technology to content creation challenges, understanding both its capabilities and the importance of effective human direction.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Illinois Standards -->
+            <div id="illinois" class="standards-content">
+                <div class="standard-section">
+                    <h2>Illinois Learning Standards</h2>
+                    
+                    <div class="alignment-note">
+                        Lesson 3.1 addresses English Language Arts and Digital Learning standards through communication development and technology literacy.
+                    </div>
+                    
+                    <h3>English Language Arts - Writing</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">W.11-12.4</div>
+                        <div class="standard-description">Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop prompts that are clear and coherent, learning to adapt their style and organization for effective AI communication.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">W.11-12.5</div>
+                        <div class="standard-description">Develop and strengthen writing through planning, revising, editing, rewriting, or trying a new approach.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle demonstrates the revision process in action, teaching students to refine their communication through multiple attempts.</div>
+                    </div>
+                    
+                    <h3>Speaking and Listening</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">SL.11-12.1</div>
+                        <div class="standard-description">Initiate and participate effectively in collaborative discussions, building on others' ideas and expressing their own clearly.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Through pair-shares and class discussions, students share directing experiences and build collaborative understanding of effective communication strategies.</div>
+                    </div>
+                    
+                    <h3>Digital Learning Standards</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">DL.2.A</div>
+                        <div class="standard-description">Students use digital tools to design and develop creative processes, novel ideas, and inventions.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn to use AI as a creative tool, developing processes for effective collaboration and content generation.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">DL.6.A</div>
+                        <div class="standard-description">Students communicate complex ideas clearly using digital tools.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop skills in communicating complex creative visions clearly through prompts, learning to articulate their intentions effectively.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ohio Standards -->
+            <div id="ohio" class="standards-content">
+                <div class="standard-section">
+                    <h2>Ohio Learning Standards</h2>
+                    
+                    <div class="alignment-note">
+                        Lesson 3.1 addresses English Language Arts and Technology standards through communication skill development and technology literacy.
+                    </div>
+                    
+                    <h3>English Language Arts - Writing</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">W.11-12.4</div>
+                        <div class="standard-description">Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop prompts with appropriate organization and style for their purpose (directing AI), adapting their approach based on desired outcomes.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">W.11-12.5</div>
+                        <div class="standard-description">Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle teaches revision as an essential process, demonstrating that multiple attempts lead to better outcomes than attempting perfection initially.</div>
+                    </div>
+                    
+                    <h3>Speaking and Listening</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">SL.11-12.1</div>
+                        <div class="standard-description">Initiate and participate effectively in collaborative discussions with diverse partners.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students engage in discussions about directing experiences, sharing strategies and building on peer insights to develop collective understanding.</div>
+                    </div>
+                    
+                    <h3>Technology Standards</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">T.11-12.1</div>
+                        <div class="standard-description">Use technology to pursue interests, solve problems, and personalize learning.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn to use AI technology to pursue creative interests and solve content creation challenges through effective direction and collaboration.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">T.11-12.6</div>
+                        <div class="standard-description">Evaluate the impact of technology on society.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students explore how AI changes professional roles and access to creative production, considering implications for various career paths.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Georgia Standards -->
+            <div id="georgia" class="standards-content">
+                <div class="standard-section">
+                    <h2>Georgia Standards of Excellence</h2>
+                    
+                    <div class="alignment-note">
+                        Lesson 3.1 addresses English Language Arts and Information Technology standards through communication development and technology literacy.
+                    </div>
+                    
+                    <h3>English Language Arts - Writing</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">ELAGSE11-12W4</div>
+                        <div class="standard-description">Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop prompts that are clear and appropriate to their purpose (directing AI), learning organizational strategies for effective communication.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">ELAGSE11-12W5</div>
+                        <div class="standard-description">Develop and strengthen writing by planning, revising, editing, rewriting, or trying a new approach.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle demonstrates the revision process, teaching students that refinement through multiple attempts produces better results than seeking initial perfection.</div>
+                    </div>
+                    
+                    <h3>Speaking and Listening</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">ELAGSE11-12SL1</div>
+                        <div class="standard-description">Initiate and participate effectively in collaborative discussions, building on others' ideas and expressing their own clearly.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students participate in discussions about directing strategies, sharing experiences and building collaborative understanding of effective communication.</div>
+                    </div>
+                    
+                    <h3>Information Technology Standards</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">ITSXC-BCS-1</div>
+                        <div class="standard-description">Demonstrate effective communication skills using technology.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop electronic communication skills through learning to direct AI effectively, understanding professional terminology and context-appropriate usage.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">ITSXC-BCS-5</div>
+                        <div class="standard-description">Explore emerging technologies and their impact on society.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students explore AI technology's impact on professional roles, creative production, and career pathways, understanding both opportunities and implications.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- North Carolina Standards -->
+            <div id="northcarolina" class="standards-content">
+                <div class="standard-section">
+                    <h2>North Carolina Standard Course of Study</h2>
+                    
+                    <div class="alignment-note">
+                        Lesson 3.1 addresses English Language Arts and Computer Science standards through communication development and technology literacy.
+                    </div>
+                    
+                    <h3>English Language Arts - Writing</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">W.11-12.4</div>
+                        <div class="standard-description">Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop clear, coherent prompts appropriate to their purpose (directing AI) and learn to adapt their communication style for desired outcomes.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">W.11-12.5</div>
+                        <div class="standard-description">Develop and strengthen writing as needed by planning, revising, editing, rewriting.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle teaches systematic revision, demonstrating that effective communication develops through multiple refinements rather than initial perfection.</div>
+                    </div>
+                    
+                    <h3>Speaking and Listening</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">SL.11-12.1</div>
+                        <div class="standard-description">Initiate and participate effectively in collaborative discussions with diverse partners.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students engage in collaborative discussions about directing experiences, sharing strategies and building on peer insights.</div>
+                    </div>
+                    
+                    <h3>Computer Science Standards</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CS.9-12.IC.14</div>
+                        <div class="standard-description">Analyze the impact of computing innovations on society and individual culture.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students explore how AI technology changes professional roles, creative production access, and career pathways, considering social and cultural implications.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CS.9-12.IC.15</div>
+                        <div class="standard-description">Evaluate ways that computing impacts equity, access, and influence.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students consider how AI affects access to content creation, examining both opportunities (democratized creation) and challenges (changing skill requirements).</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Michigan Standards -->
+            <div id="michigan" class="standards-content">
+                <div class="standard-section">
+                    <h2>Michigan Academic Standards</h2>
+                    
+                    <div class="alignment-note">
+                        Lesson 3.1 addresses English Language Arts and Career & Technical Education standards through communication development and professional skill building.
+                    </div>
+                    
+                    <h3>English Language Arts - Writing</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">W.11-12.4</div>
+                        <div class="standard-description">Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop prompts with appropriate organization and style for their purpose (directing AI), learning to adapt communication strategies for effectiveness.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">W.11-12.5</div>
+                        <div class="standard-description">Develop and strengthen writing through planning, revising, editing, rewriting, or trying a new approach.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle demonstrates the revision process, teaching that refinement through multiple attempts produces better outcomes than seeking perfection initially.</div>
+                    </div>
+                    
+                    <h3>Speaking and Listening</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">SL.11-12.1</div>
+                        <div class="standard-description">Initiate and participate effectively in collaborative discussions with diverse partners.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students participate in discussions about directing strategies, sharing experiences and building collaborative understanding of effective communication.</div>
+                    </div>
+                    
+                    <h3>Career & Technical Education</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CTE.IT.1.1</div>
+                        <div class="standard-description">Demonstrate effective communication in professional settings.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn professional communication frameworks (editor/ghost writer model) and develop skills in clear direction, evaluation, and feedback.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CTE.IT.5.2</div>
+                        <div class="standard-description">Demonstrate adaptability in using emerging technologies.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop foundational skills for working with AI technology, learning to adapt their communication strategies for effective technological collaboration.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Virginia Standards -->
+            <div id="virginia" class="standards-content">
+                <div class="standard-section">
+                    <h2>Virginia Standards of Learning</h2>
+                    
+                    <div class="alignment-note">
+                        Lesson 3.1 addresses English and Computer Science standards through communication development and technology literacy.
+                    </div>
+                    
+                    <h3>English - Writing</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">11.7</div>
+                        <div class="standard-description">Write in a variety of forms to include expository, persuasive, reflective, interpretive, and analytic, with an emphasis on inquiry and research.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students compose prompts as a form of expository and analytical writing, learning to explain their vision clearly and analyze what makes communication effective.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">11.6</div>
+                        <div class="standard-description">The student will use a variety of reference materials, including specialized resources as appropriate.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn to use AI as a specialized resource, understanding when and how to employ it effectively in the creative process.</div>
+                    </div>
+                    
+                    <h3>Speaking and Listening</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">11.1</div>
+                        <div class="standard-description">Participate in and report on small-group learning activities.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students engage in pair-shares and group discussions about directing experiences, sharing insights and building collaborative understanding.</div>
+                    </div>
+                    
+                    <h3>Computer Science</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CS.9-12.IC.1</div>
+                        <div class="standard-description">Analyze how computing technologies have changed society and individual culture.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students explore how AI technology changes professional roles, creative production, and access to content creation capabilities.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CS.9-12.IC.2</div>
+                        <div class="standard-description">Evaluate the ways computing impacts equity, access, and influence.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students consider how AI affects access to creative production and professional opportunities, examining both benefits and challenges.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Washington Standards -->
+            <div id="washington" class="standards-content">
+                <div class="standard-section">
+                    <h2>Washington State K-12 Learning Standards</h2>
+                    
+                    <div class="alignment-note">
+                        Lesson 3.1 addresses ELA and Computer Science standards through communication development and technology literacy.
+                    </div>
+                    
+                    <h3>English Language Arts - Writing</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">W.11-12.4</div>
+                        <div class="standard-description">Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop prompts that are clear and appropriate to their purpose (directing AI), learning to organize information effectively for desired outcomes.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">W.11-12.5</div>
+                        <div class="standard-description">Develop and strengthen writing through planning, revising, editing, rewriting, or trying a new approach.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle demonstrates systematic revision, teaching that refinement through multiple attempts produces better outcomes than attempting perfection initially.</div>
+                    </div>
+                    
+                    <h3>Speaking and Listening</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">SL.11-12.1</div>
+                        <div class="standard-description">Initiate and participate effectively in collaborative discussions with diverse partners.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students engage in discussions about directing experiences, sharing strategies and building collaborative understanding of effective communication.</div>
+                    </div>
+                    
+                    <h3>Computer Science Standards</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">9-12.IC.SI.01</div>
+                        <div class="standard-description">Analyze how computing technologies have changed the way people use technology.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students explore how AI technology changes the creative production process and professional roles, understanding new ways of working with technology.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">9-12.IC.SI.02</div>
+                        <div class="standard-description">Evaluate the impacts of computing innovations on equity, access, and influence.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students consider how AI affects access to content creation and professional opportunities, examining both democratizing effects and challenges.</div>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Mississippi Standards -->
             <div id="mississippi" class="standards-content">
                 <div class="standard-section">
@@ -229,7 +816,7 @@
                         Lesson 3.1 emphasizes communication, professional practices, and technology literacy—core competencies in Mississippi's college and career readiness framework.
                     </div>
                     
-                    <h3>English Language Arts</h3>
+                    <h3>English Language Arts - Writing</h3>
                     
                     <div class="standard-item">
                         <div class="standard-code">W.11-12.4</div>
@@ -240,8 +827,10 @@
                     <div class="standard-item">
                         <div class="standard-code">W.11-12.5</div>
                         <div class="standard-description">Develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach, focusing on addressing what is most significant for a specific purpose and audience.</div>
-                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle (request → evaluate → refine → repeat) directly teaches revision and trying new approaches to strengthen communication effectiveness.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle (request ? evaluate ? refine ? repeat) directly teaches revision and trying new approaches to strengthen communication effectiveness.</div>
                     </div>
+                    
+                    <h3>Speaking and Listening</h3>
                     
                     <div class="standard-item">
                         <div class="standard-code">SL.11-12.1</div>
@@ -280,7 +869,7 @@
                         Lesson 3.1 emphasizes writing process, communication, and language development—core ELA competencies in the Common Core framework.
                     </div>
                     
-                    <h3>Writing Standards</h3>
+                    <h3>Writing Standards - Grades 9-10 / 11-12</h3>
                     
                     <div class="standard-item">
                         <div class="standard-code">CCSS.ELA-LITERACY.W.9-10.4 / W.11-12.4</div>
@@ -294,12 +883,24 @@
                         <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle teaches systematic revision and refinement. Students learn that initial attempts are starting points, not failures, and develop strategies for progressive improvement through multiple iterations.</div>
                     </div>
                     
+                    <div class="standard-item">
+                        <div class="standard-code">CCSS.ELA-LITERACY.W.9-10.10 / W.11-12.10</div>
+                        <div class="standard-description">Write routinely over extended time frames and shorter time frames for a range of tasks, purposes, and audiences.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students write prompts for various purposes, developing versatility in communication across different contexts and time frames.</div>
+                    </div>
+                    
                     <h3>Speaking and Listening Standards</h3>
                     
                     <div class="standard-item">
                         <div class="standard-code">CCSS.ELA-LITERACY.SL.9-10.1 / SL.11-12.1</div>
                         <div class="standard-description">Initiate and participate effectively in a range of collaborative discussions with diverse partners on grades 9-12 topics, texts, and issues, building on others' ideas and expressing their own clearly and persuasively.</div>
                         <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Through pair-shares and class discussions, students share experiences directing others, build on peer observations, and articulate their own directing strategies.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">CCSS.ELA-LITERACY.SL.9-10.4 / SL.11-12.4</div>
+                        <div class="standard-description">Present information, findings, and supporting evidence clearly and logically.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students present their directing strategies and reasoning in discussions, learning to explain their communication approaches clearly and logically.</div>
                     </div>
                     
                     <h3>Language Standards</h3>
@@ -349,6 +950,12 @@
                         <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn to communicate complex creative visions clearly through prompts, developing skills in precise direction and evaluation of digital content.</div>
                     </div>
                     
+                    <div class="standard-item">
+                        <div class="standard-code">6d</div>
+                        <div class="standard-description">Students publish or present content that customizes the message and medium for their intended audiences.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn to customize their prompts based on their intended outcome, understanding how to adapt their communication for different purposes.</div>
+                    </div>
+                    
                     <h3>4. Innovative Designer</h3>
                     
                     <div class="standard-item">
@@ -377,6 +984,12 @@
                     </div>
                     
                     <div class="standard-item">
+                        <div class="standard-code">3A-IC-25</div>
+                        <div class="standard-description">Test and refine computational artifacts to reduce bias and equity deficits.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Through the iteration cycle, students learn to evaluate and refine their prompts, understanding that effective direction shapes AI output quality and appropriateness.</div>
+                    </div>
+                    
+                    <div class="standard-item">
                         <div class="standard-code">3B-IC-25</div>
                         <div class="standard-description">Evaluate computational artifacts to maximize their beneficial effects and minimize harmful effects on society.</div>
                         <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn to use AI as a tool that empowers rather than replaces human creativity, understanding how effective direction maximizes beneficial outcomes.</div>
@@ -388,6 +1001,14 @@
                         <div class="standard-code">3A-CS-03</div>
                         <div class="standard-description">Develop guidelines that convey systematic troubleshooting strategies that others can use to identify and fix errors.</div>
                         <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> The iteration cycle provides a systematic troubleshooting framework: evaluate output, identify problems, refine direction, repeat. This systematic approach to improvement applies broadly.</div>
+                    </div>
+                    
+                    <h3>Algorithms and Programming</h3>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">3B-AP-21</div>
+                        <div class="standard-description">Develop and use a series of test cases to verify that a program performs according to its design specifications.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn to test their prompts iteratively, evaluating whether AI output matches their specifications and refining their direction accordingly.</div>
                     </div>
                 </div>
             </div>
@@ -409,6 +1030,12 @@
                         <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students examine how AI technology changes professional roles and career pathways, analyzing the benefits (efficiency, accessibility) and costs (changing skill requirements) for different groups.</div>
                     </div>
                     
+                    <div class="standard-item">
+                        <div class="standard-code">D2.Eco.14.9-12</div>
+                        <div class="standard-description">Analyze how changes in technology and resources affect the production and distribution of goods and services.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students explore how AI technology changes the production of creative content, understanding implications for professional roles and access to creation capabilities.</div>
+                    </div>
+                    
                     <h3>Dimension 4: Communicating Conclusions and Taking Informed Action</h3>
                     
                     <div class="standard-item">
@@ -420,131 +1047,15 @@
                     <div class="standard-item">
                         <div class="standard-code">D4.2.9-12</div>
                         <div class="standard-description">Construct explanations using sound reasoning, correct sequence, examples, and details with significant and pertinent information and data.</div>
-                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Through field journal reflections, students construct explanations of effective directing strategies using specific examples and reasoning about what makes communication successful.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Through reflections, students construct explanations of effective directing strategies using specific examples and reasoning about what makes communication successful.</div>
+                    </div>
+                    
+                    <div class="standard-item">
+                        <div class="standard-code">D4.3.9-12</div>
+                        <div class="standard-description">Present adaptations of arguments and explanations on topics of interest to others to reach audiences and venues outside the classroom.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn professional terminology for describing their skills (prompt engineering, developmental editor), preparing them to communicate their capabilities in professional contexts.</div>
                     </div>
                 </div>
             </div>
             
-            <!-- Texas TEKS -->
-            <div id="texas" class="standards-content">
-                <div class="standard-section">
-                    <h2>Texas Essential Knowledge and Skills (TEKS)</h2>
-                    
-                    <div class="alignment-note">
-                        Lesson 3.1 addresses English Language Arts and Career & Technical Education standards through communication development and professional skill building.
-                    </div>
-                    
-                    <h3>English Language Arts</h3>
-                    
-                    <div class="standard-item">
-                        <div class="standard-code">ELA.110.36.b.12</div>
-                        <div class="standard-description">Compose informational texts such as explanatory essays, reports, and personal essays using genre characteristics and craft.</div>
-                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students compose prompts as a form of informational text, learning to craft clear explanations and directions that communicate their vision effectively to AI.</div>
-                    </div>
-                    
-                    <div class="standard-item">
-                        <div class="standard-code">ELA.110.36.b.13</div>
-                        <div class="standard-description">Develop an effective thesis; organize and support ideas with relevant facts, definitions, concrete details, quotations, examples, statistics, and other information; and use an organizational structure appropriate to the purpose.</div>
-                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop organizational strategies for prompts, learning to structure information appropriately for their purpose (directing AI) and support their directions with relevant details.</div>
-                    </div>
-                    
-                    <h3>Technology Applications</h3>
-                    
-                    <div class="standard-item">
-                        <div class="standard-code">TA.126.33.c.1</div>
-                        <div class="standard-description">Demonstrate professional written, verbal, and electronic communication skills.</div>
-                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop professional communication skills through learning appropriate terminology (prompt engineering, developmental editor) and effective electronic communication with AI systems.</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- California Standards -->
-            <div id="california" class="standards-content">
-                <div class="standard-section">
-                    <h2>California Common Core State Standards</h2>
-                    
-                    <div class="alignment-note">
-                        Lesson 3.1 addresses writing, speaking/listening, and language standards through communication skill development.
-                    </div>
-                    
-                    <h3>Writing Standards</h3>
-                    
-                    <div class="standard-item">
-                        <div class="standard-code">CCSS.ELA-LITERACY.W.9-10.4</div>
-                        <div class="standard-description">Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.</div>
-                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn to produce clear prompts appropriate to their purpose (directing AI) and audience (AI system), developing organizational strategies for effective communication.</div>
-                    </div>
-                    
-                    <h3>Speaking and Listening Standards</h3>
-                    
-                    <div class="standard-item">
-                        <div class="standard-code">CCSS.ELA-LITERACY.SL.9-10.1</div>
-                        <div class="standard-description">Initiate and participate effectively in collaborative discussions, building on others' ideas and expressing their own clearly.</div>
-                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students engage in pair-shares and whole-class discussions about directing experiences, building on peer insights and articulating their own communication strategies.</div>
-                    </div>
-                    
-                    <h3>Career Technical Education Standards</h3>
-                    
-                    <div class="standard-item">
-                        <div class="standard-code">CTE.IT.1.2</div>
-                        <div class="standard-description">Demonstrate effective communication with colleagues, clients, and customers.</div>
-                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn professional communication frameworks through the editor/ghost writer model, developing skills in clear direction, evaluation, and feedback.</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Florida Standards -->
-            <div id="florida" class="standards-content">
-                <div class="standard-section">
-                    <h2>Florida Standards</h2>
-                    
-                    <div class="alignment-note">
-                        Lesson 3.1 addresses Language Arts and Digital Literacy standards through communication development and technology skill building.
-                    </div>
-                    
-                    <h3>English Language Arts</h3>
-                    
-                    <div class="standard-item">
-                        <div class="standard-code">LAFS.910.W.1.4</div>
-                        <div class="standard-description">Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience.</div>
-                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop clear, coherent prompts appropriate to their purpose and audience, learning to adapt their communication style for effective AI collaboration.</div>
-                    </div>
-                    
-                    <div class="standard-item">
-                        <div class="standard-code">LAFS.910.SL.1.1</div>
-                        <div class="standard-description">Initiate and participate effectively in collaborative discussions, building on others' ideas and expressing their own clearly and persuasively.</div>
-                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Through pair-shares and class discussions, students share directing experiences, build on peer observations, and articulate their own strategies clearly.</div>
-                    </div>
-                    
-                    <h3>Digital Literacy Standards</h3>
-                    
-                    <div class="standard-item">
-                        <div class="standard-code">SS.912.C.2.14</div>
-                        <div class="standard-description">Analyze processes for civic engagement and explain how to participate in all forms of democratic discourse.</div>
-                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students develop communication and collaboration skills essential for civic participation, learning to express ideas clearly and engage productively in shared work.</div>
-                    </div>
-                </div>
-            </div>
-            
-        </div><!-- End content -->
-    </div><!-- End container -->
-    
-    <script>
-        function showStandards(value) {
-            // Hide all standards content
-            const allContent = document.querySelectorAll('.standards-content');
-            allContent.forEach(content => {
-                content.classList.remove('active');
-            });
-            
-            // Show selected standards
-            if (value) {
-                const selectedContent = document.getElementById(value);
-                if (selectedContent) {
-                    selectedContent.classList.add('active');
-                }
-            }
-        }
-    </script>
-</body>
-</html>
+        </div>
