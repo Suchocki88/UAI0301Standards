@@ -51,6 +51,10 @@
             border-radius: 8px;
             border-left: 4px solid #2196F3;
             margin-bottom: 30px;
+            color: #333;
+        }
+        .intro p {
+            color: #333;
         }
         .standards-selector {
             margin-bottom: 30px;
@@ -187,29 +191,6 @@
             <h1>State Standards Alignment</h1>
             <div class="subtitle">Understanding AI: A Conceptual Approach</div>
             <div class="lesson-info">Chapter 3, Lesson 3.1: The New Communication Landscape</div>
-        </div><!-- End content -->
-    </div><!-- End container -->
-    
-    <script>
-        function showStandards(value) {
-            // Hide all standards content
-            const allContent = document.querySelectorAll('.standards-content');
-            allContent.forEach(content => {
-                content.classList.remove('active');
-            });
-            
-            // Show selected standards
-            if (value) {
-                const selectedContent = document.getElementById(value);
-                if (selectedContent) {
-                    selectedContent.classList.add('active');
-                }
-            }
-        }
-    </script>
-</body>
-</html>
-        
         <button class="print-button" onclick="window.print()">??? Print Standards</button>
         
         <div class="content">
@@ -813,7 +794,7 @@
                     <h2>Mississippi College and Career Readiness Standards</h2>
                     
                     <div class="alignment-note">
-                        Lesson 3.1 emphasizes communication, professional practices, and technology literacy—core competencies in Mississippi's college and career readiness framework.
+                        Lesson 3.1 emphasizes communication, professional practices, and technology literacy�core competencies in Mississippi's college and career readiness framework.
                     </div>
                     
                     <h3>English Language Arts - Writing</h3>
@@ -849,7 +830,7 @@
                     <div class="standard-item">
                         <div class="standard-code">CTE.IT.1</div>
                         <div class="standard-description">Demonstrate effective communication skills in professional settings.</div>
-                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn professional communication frameworks (editor/ghost writer model) and develop skills in clear direction, evaluation, and feedback—all essential professional communication competencies.</div>
+                        <div class="lesson-mapping"><strong>Lesson 3.1 Alignment:</strong> Students learn professional communication frameworks (editor/ghost writer model) and develop skills in clear direction, evaluation, and feedback�all essential professional communication competencies.</div>
                     </div>
                     
                     <div class="standard-item">
@@ -866,7 +847,7 @@
                     <h2>Common Core State Standards - English Language Arts</h2>
                     
                     <div class="alignment-note">
-                        Lesson 3.1 emphasizes writing process, communication, and language development—core ELA competencies in the Common Core framework.
+                        Lesson 3.1 emphasizes writing process, communication, and language development�core ELA competencies in the Common Core framework.
                     </div>
                     
                     <h3>Writing Standards - Grades 9-10 / 11-12</h3>
@@ -1059,3 +1040,27 @@
             </div>
             
         </div>
+        </div>
+    </div>
+
+    <script>
+        function showStandards(value) {
+            // Hide all standards content
+            const allContent = document.querySelectorAll('.standards-content');
+            allContent.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected standards content
+            if (value) {
+                const selectedContent = document.getElementById(value);
+                if (selectedContent) {
+                    selectedContent.classList.add('active');
+                    // Scroll to content
+                    selectedContent.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            }
+        }
+    </script>
+</body>
+</html>
